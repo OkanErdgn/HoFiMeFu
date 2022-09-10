@@ -1,0 +1,34 @@
+{
+  "applications": "*",
+  "changelogDate": "20220910150054",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "user_school",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "SchoolStatus",
+      "fieldValues": "ACTIVE,INACTIVE"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserSchool",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userSchool",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "school",
+      "otherEntityRelationshipName": "userSchool",
+      "relationshipName": "school",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

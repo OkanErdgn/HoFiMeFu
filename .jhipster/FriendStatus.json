@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20220910150050",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "friend_status",
+  "fields": [
+    {
+      "fieldName": "created",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "lastChanged",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "FriendshipStatus",
+      "fieldValues": "ACTIVE,BLOCKED"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "FriendStatus",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

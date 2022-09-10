@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20220910150051",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "user_config",
+  "fields": [
+    {
+      "fieldName": "shareLocation",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "language",
+      "fieldType": "Language",
+      "fieldValues": "FRENCH,ENGLISH,SPANISH,TURKISH"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserConfig",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userConfig",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

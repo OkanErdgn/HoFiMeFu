@@ -1,0 +1,93 @@
+
+entity Friend {
+
+}
+
+relationship ManyToOne {
+	Friend{user1} to User
+    Friend{user2} to User
+}
+
+relationship OneToOne {
+	 Friend{status} to FriendStatus
+}
+
+enum FriendshipStatus{
+	ACTIVE, BLOCKED 
+}
+
+entity FriendStatus{
+	created ZonedDateTime,
+    lastChanged ZonedDateTime,
+    status FriendshipStatus
+}
+
+entity UserConfig{
+	shareLocation Boolean,
+    language Language,
+}
+
+relationship OneToOne {
+	UserConfig to User
+}
+
+entity Location{
+	latitude Double,
+    longitude Double,
+    lastChanged ZonedDateTime
+}
+
+relationship OneToOne {
+	Location to User
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH, TURKISH
+}
+
+entity GlobalChat{
+	message String,
+    created ZonedDateTime
+}
+
+relationship ManyToOne {
+	GlobalChat to User
+}
+
+enum SchoolStatus{
+	ACTIVE, INACTIVE
+}
+
+entity UserSchool{
+	status SchoolStatus
+}
+
+relationship ManyToOne{
+	UserSchool to User
+}
+
+relationship ManyToOne{
+	UserSchool to School
+}
+
+entity School{
+	name String,
+    adress String,
+    emailDomain String
+}
+
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

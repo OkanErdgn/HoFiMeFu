@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20220910150055",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "school",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailDomain",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "School",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "userSchool",
+      "otherEntityRelationshipName": "school",
+      "relationshipName": "userSchool",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
