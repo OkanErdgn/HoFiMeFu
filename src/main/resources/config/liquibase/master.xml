@@ -18,12 +18,16 @@
     <include file="config/liquibase/changelog/20220910150053_added_entity_GlobalChat.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220910150054_added_entity_UserSchool.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220910150055_added_entity_School.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220914153549_added_entity_EvetUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220914153550_added_entity_Event.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20220910150049_added_entity_constraints_Friend.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220910150051_added_entity_constraints_UserConfig.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220910150052_added_entity_constraints_Location.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220910150053_added_entity_constraints_GlobalChat.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220910150054_added_entity_constraints_UserSchool.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220914153549_added_entity_constraints_EvetUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220914153550_added_entity_constraints_Event.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
